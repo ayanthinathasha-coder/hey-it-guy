@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRINCESS.exe 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- SCREEN 1 — LOADING -->
+    <section class="screen active" id="screen-1">
+        <div class="window loading-window">
+            <div class="computer-icon">💻</div>
+            <p class="small-text">SYSTEM BOOT</p>
+            <h1>PRINCESS.exe</h1>
+            <p>Initializing a very important message...</p>
+
+            <div class="progress">
+                <div class="progress-bar"></div>
+            </div>
+
+            <p class="loading-text">Loading feelings... 💗</p>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 2 — WELCOME -->
+    <section class="screen" id="screen-2">
+        <div class="window">
+            <div class="icon">💌</div>
+            <p class="small-text">WELCOME</p>
+            <h1>Hey, IT guy... 🐸</h1>
+
+            <p>
+                I made something a little different for you. 😭
+            </p>
+
+            <p>
+                Instead of sending you one giant emotional paragraph,
+                I made you a tiny relationship debugging program. 💻💗
+            </p>
+
+            <p>
+                Please don't escape before reaching the end. 😂
+            </p>
+
+            <button onclick="nextScreen()">START DEBUGGING 🐸</button>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 3 — HEART ACTIVITY -->
+    <section class="screen" id="screen-3">
+        <div class="window">
+            <p class="small-text">HEART VERIFICATION</p>
+            <h2>First... take care of the heart ❤️</h2>
+
+            <p>
+                Before continuing, the system needs to make sure
+                you still have a little patience for this princess. 🥺
+            </p>
+
+            <div class="big-heart" onclick="tapHeart()">❤️</div>
+
+            <p id="heart-counter">0 / 5</p>
+            <p id="heart-message">Tap the heart five times...</p>
+
+            <button id="heart-next" class="hidden" onclick="nextScreen()">
+                HEART VERIFIED 💗
+            </button>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 4 — BUG 01 -->
+    <section class="screen" id="screen-4">
+        <div class="window">
+            <p class="bug">🐛 BUG #01</p>
+            <h2>The Balloon Photos</h2>
+
+            <div class="photo-placeholder">
+                🎈📸
+                <span>Balloon memory</span>
+            </div>
+
+            <p>
+                I didn't copy those photos from anyone.
+            </p>
+
+            <p>
+                My sister bought me that balloon, I liked it,
+                and that's why I took those pictures.
+            </p>
+
+            <p>
+                When I found out that your ex had taken similar
+                photos, I removed mine after you told me.
+                I didn't want something that accidentally reminded you of her.
+            </p>
+
+            <p>
+                But honestly... when you said I copied her,
+                it hurt me. 🥀
+            </p>
+
+            <p>
+                My first thought was:
+                <strong>“Why am I being compared to her again?”</strong>
+            </p>
+
+            <p>
+                I don't want to compete with someone from your past.
+                I just want to be myself with you. 🌷
+            </p>
+
+            <button onclick="nextScreen()">NEXT BUG →</button>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 5 — BUG 02 -->
+    <section class="screen" id="screen-5">
+        <div class="window">
+            <p class="bug">🐛 BUG #02</p>
+            <h2>My Mistake</h2>
+
+            <div class="bug-icon">😣</div>
+
+            <p>
+                I know I did something that hurt you.
+            </p>
+
+            <p>
+                And I'm genuinely sorry for that. ❤️
+            </p>
+
+            <p>
+                I didn't do it intentionally, and I never wanted
+                to make you feel hurt or disrespected.
+            </p>
+
+            <p>
+                I'm sorry for my part in it.
+            </p>
+
+            <p class="soft">
+                Apology.exe has been successfully submitted. 🥺
+            </p>
+
+            <button onclick="nextScreen()">NEXT BUG →</button>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 6 — BUG 03 -->
+    <section class="screen" id="screen-6">
+        <div class="window">
+            <p class="bug">🐛 BUG #03</p>
+            <h2>Comparison Error</h2>
+
+            <div class="warning-box">
+                ⚠️ COMPARISON DETECTED
+            </div>
+
+            <p>
+                When you said that your ex didn't do those things
+                and that she stayed happy with you...
+            </p>
+
+            <p>
+                I'm not going to lie.
+                <strong>That really hurt. 😓</strong>
+            </p>
+
+            <p>
+                Because I started wondering:
+            </p>
+
+            <div class="question-card">
+                “Is she actually better than me?”
+            </div>
+
+            <p>
+                And I need to ask you something honestly...
+            </p>
+
+            <div class="question-card">
+                Why do you keep comparing me with her?
+            </div>
+
+            <p>
+                I don't compare you with my past.
+                I don't want you to feel like you're competing
+                with anyone either.
+            </p>
+
+            <p>
+                I'm sorry if I'm not her.
+                <br>
+                But I don't want to be her.
+            </p>
+
+            <p>
+                <strong>I want to be me.</strong> 🌷
+            </p>
+
+            <button onclick="nextScreen()">CONTINUE →</button>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 7 — PAST MEMORIES -->
+    <section class="screen" id="screen-7">
+        <div class="window">
+            <p class="warning">⚠️ SYSTEM WARNING</p>
+            <h2>The Past Still Scares Me</h2>
+
+            <p>
+                There's something I've been scared to tell you properly.
+            </p>
+
+            <p>
+                I know you still have your ex's profile among
+                your followers.
+            </p>
+
+            <p>
+                And sometimes that makes me overthink. 😓
+            </p>
+
+            <p>
+                I start wondering whether you're still thinking about her,
+                or whether some part of you is still living in those old memories.
+            </p>
+
+            <p>
+                I know I don't have the right to control who you follow
+                or tell you what memories you should keep.
+                Those are your choices, and I respect that.
+            </p>
+
+            <p>
+                But if I'm being completely honest...
+                I'd feel safer if those old things weren't still around.
+            </p>
+
+            <p>
+                I'm not asking you to prove your love by deleting everything.
+            </p>
+
+            <p>
+                I just want to know that
+                <strong>I'm not competing with a memory. 🥀</strong>
+            </p>
+
+            <button onclick="nextScreen()">I UNDERSTAND →</button>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 8 — VERSION HISTORY -->
+    <section class="screen" id="screen-8">
+        <div class="window">
+            <p class="small-text">💾 VERSION HISTORY</p>
+            <h2>Me — Past → Present</h2>
+
+            <div class="version">
+                <span>VERSION 1.0</span>
+                <strong>School Girl</strong>
+                <p>
+                    Quiet. Silly. A little shy.
+                    The girl who first looked into your eyes
+                    and fell for you. 🥹
+                </p>
+            </div>
+
+            <div class="version">
+                <span>VERSION 2.0</span>
+                <strong>Growing Up</strong>
+                <p>
+                    More open. More talkative.
+                    Definitely more dramatic. 😂
+                </p>
+            </div>
+
+            <div class="version">
+                <span>VERSION 3.0</span>
+                <strong>Current Me</strong>
+                <p>
+                    Playful, sometimes childish, sometimes emotional,
+                    and probably an expert-level overthinker. 😭
+                </p>
+            </div>
+
+            <p>
+                I'm still learning how to communicate,
+                how to understand you, and how to handle
+                a relationship properly.
+            </p>
+
+            <p>
+                But there's one thing that hasn't changed.
+            </p>
+
+            <div class="highlight">
+                The girl who first liked you is still here. ❤️
+            </div>
+
+            <p>
+                I'm not the same silent girl you remember from school.
+                I've changed. I've grown. I've become louder,
+                sillier, more playful and probably much more complicated.
+            </p>
+
+            <p>
+                But the love I had for you back then didn't simply disappear.
+            </p>
+
+            <p class="soft">
+                Somehow, that little feeling is still here. 🥹❤️🐸
+            </p>
+
+            <button onclick="nextScreen()">INSTALL FINAL PATCH →</button>
+        </div>
+    </section>
+
+
+    <!-- SCREEN 9 — FINAL PATCH -->
+    <section class="screen" id="screen-9">
+        <div class="window">
+            <div class="tool">🔧</div>
+            <p class="small-text">FINAL PATCH</p>
+            <h2>Relationship Update 1.0</h2>
+
+            <p>
+                I don't want you to erase your past for me.
+            </p>
+
+            <p>
+                I don't want to become your ex.
+                <br>
+                I don't want you to become someone else for me either.
+            </p>
+
+            <p>
+                I just want us to stop letting the past
+                and misunderstandings stand between us.
+            </p>
+
+            <p>
+                I'll work on my mistakes.
+                <br>
+                I'll try to ask instead of assuming.
+                <br>
+                I'll try to understand the way you communicate.
+            </p>
+
+            <p>
+                And I hope you'll do the same for me.
+            </p>
+
+            <p>
+                Because I don't want to win an argument.
+            </p>
+
+            <div class="highlight">
+                I want us to understand each other. ❤️
+            </div>
+
+            <div class="status">
+                STATUS: NEEDS ONE HONEST CONVERSATION 🥺
+            </div>
+
+            <button onclick="installPatch()">🐸 ACCEPT PATCH</button>
+
+            <div id="installed" class="hidden final-message">
+                <div class="success">✓ PATCH INSTALLED</div>
+
+                <h2>System is running again. ❤️</h2>
+
+                <p>
+                    I made mistakes.
+                    You made mistakes too.
+                </p>
+
+                <p>
+                    I'm not asking for perfection.
+                    I'm asking for understanding,
+                    honesty, and a little more patience with each other.
+                </p>
+
+                <p>
+                    So... no more guessing what the other person means.
+                    Let's just talk. 🥺
+                </p>
+
+                <p class="big-final">
+                    Okay... now come talk to me properly,
+                    silly IT guy. 😭❤️🐸
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
