@@ -399,3 +399,17 @@ button:active {
 .hidden {
     display: none !important;
 }
+.balloon-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.balloon-gallery img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    border-radius: 15px;
+    display: block;
+}
