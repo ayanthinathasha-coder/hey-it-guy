@@ -159,7 +159,30 @@
         <div class="window">
             <p class="bug">🐛 BUG #03</p>
             <h2>Comparison Error</h2>
+            <div class="debug-game">
+                <div class="debug-title">💻 SYSTEM QUESTION</div>
 
+                <p class="debug-subtitle">Can You Debug Her? 🐸</p>
+
+                <div id="quiz-question">
+                    <p>Question 1/3</p>
+                    <p>Why did Princess delete the balloon photos?</p>
+
+                    <button onclick="answerQuiz(false)">Because she hated the photos 😭</button>
+                    <button onclick="answerQuiz(true)">Because she found out they were similar to photos from the past 💗</button>
+                    <button onclick="answerQuiz(false)">Because someone told her to copy them 😅</button>
+                </div>
+
+                <p id="quiz-message"></p>
+
+                <button id="quiz-next" class="hidden" onclick="nextQuizQuestion()">
+                    NEXT QUESTION →
+                </button>
+
+    <button id="quiz-finish" class="hidden" onclick="finishQuiz()">
+        DEBUG COMPLETE 💗
+    </button>
+</div>
             <div class="warning-box">
                 ⚠️ COMPARISON DETECTED
             </div>
